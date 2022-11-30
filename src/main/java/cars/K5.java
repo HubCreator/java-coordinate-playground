@@ -1,13 +1,14 @@
-package domain;
+package cars;
 
-public class Sonata extends Car {
-    public Sonata(int mileage) {
+public class K5 extends Car {
+
+    public K5(int mileage) {
         super(mileage);
     }
 
     @Override
     double getDistancePerLiter() {
-        return 10d;
+        return 13d;
     }
 
     @Override
@@ -17,6 +18,6 @@ public class Sonata extends Car {
 
     @Override
     String getName() {
-        return "Sonata";
+        return "K5";
     }
 }

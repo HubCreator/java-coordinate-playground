@@ -1,7 +1,7 @@
-import domain.Avante;
-import domain.K5;
-import domain.RentCompany;
-import domain.Sonata;
+import cars.Avante;
+import cars.K5;
+import cars.RentCompany;
+import cars.Sonata;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

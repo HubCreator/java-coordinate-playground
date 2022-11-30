@@ -1,4 +1,4 @@
-package domain;
+package cars;
 
 public abstract class Car {
     protected final int mileage;
