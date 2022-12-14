@@ -23,7 +23,7 @@ public class ValidationUtil {
         return new int[]{Integer.parseInt(split[0]), Integer.parseInt(split[1])};
     }
 
-    public static double getDistance(DistanceStrategy strategy) {
-        return strategy.getDistance();
+    public static double getResult(AreaStrategy strategy) {
+        return strategy.getResult();
     }
 }

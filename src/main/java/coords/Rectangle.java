@@ -3,7 +3,7 @@ package coords;
 import java.util.Arrays;
 import java.util.List;
 
-public class Rectangle implements DistanceStrategy {
+public class Rectangle implements AreaStrategy {
     private final List<Point> points;
 
     public Rectangle(List<Point> points) {
@@ -11,12 +11,12 @@ public class Rectangle implements DistanceStrategy {
     }
 
     @Override
-    public double getDistance() {
+    public double getResult() {
         Point target = points.get(0);
         Line horizontal = getHorizontal(target);
         Line vertical = getVertical(target);
 
-        return horizontal.getDistance() * vertical.getDistance();
+        return horizontal.getResult() * vertical.getResult();
     }
 
     private Line getHorizontal(Point target) {
