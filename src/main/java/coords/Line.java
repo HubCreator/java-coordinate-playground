@@ -2,7 +2,7 @@ package coords;
 
 import java.util.List;
 
-public class Line implements AreaStrategy {
+public class Line extends Figure {
 
     private final List<Point> points;
 

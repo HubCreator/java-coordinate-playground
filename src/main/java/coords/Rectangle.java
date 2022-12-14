@@ -3,7 +3,7 @@ package coords;
 import java.util.Arrays;
 import java.util.List;
 
-public class Rectangle implements AreaStrategy {
+public class Rectangle extends Figure {
     private final List<Point> points;
 
     public Rectangle(List<Point> points) {

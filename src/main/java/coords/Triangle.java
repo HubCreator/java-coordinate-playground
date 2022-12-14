@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Triangle implements AreaStrategy {
+public class Triangle extends Figure{
     private final List<Point> points;
 
     public Triangle(List<Point> points) {

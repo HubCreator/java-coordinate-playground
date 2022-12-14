@@ -22,8 +22,4 @@ public class ValidationUtil {
         String[] split = input.substring(1, input.length() - 1).split(",");
         return new int[]{Integer.parseInt(split[0]), Integer.parseInt(split[1])};
     }
-
-    public static double getResult(AreaStrategy strategy) {
-        return strategy.getResult();
-    }
 }
