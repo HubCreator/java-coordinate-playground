@@ -25,9 +25,22 @@ class ValidationUtilTest {
     }
 
     @Test
+    void Point_네_개_추출() {
+        assertThat(ValidationUtil.getPoints("(10,10)-(22,10)-(22,18)-(10,18)"))
+                .containsExactly(new Point(10, 10), new Point(22, 10), new Point(22, 18), new Point(10, 18));
+    }
+
+    @Test
     void 직선의_길이_구하기() {
         List<Point> points = Arrays.asList(new Point(10, 10), new Point(14, 15));
         double distance = ValidationUtil.getDistance(new Line(points));
         assertThat(String.format("%6f", distance)).isEqualTo("6.403124");
+    }
+
+    @Test
+    void 사각형_넓이_구하기() {
+        List<Point> points = ValidationUtil.getPoints("(10,10)-(22,10)-(22,18)-(10,18)");
+        double distance = ValidationUtil.getDistance(new Rectangle(points));
+        assertThat(distance).isEqualTo(96);
     }
 }

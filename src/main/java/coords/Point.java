@@ -36,4 +36,12 @@ public class Point {
     public int hashCode() {
         return Objects.hash(y, x);
     }
+
+    public boolean isSameX(Point point) {
+        return this.x == point.x;
+    }
+
+    public boolean isSameY(Point point) {
+        return this.y == point.y;
+    }
 }
