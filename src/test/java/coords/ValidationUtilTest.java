@@ -1,6 +1,5 @@
 package coords;
 
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.DisplayNameGeneration;
 import org.junit.jupiter.api.DisplayNameGenerator;
 import org.junit.jupiter.api.Test;
@@ -29,6 +28,6 @@ class ValidationUtilTest {
     void 직선의_길이_구하기() {
         List<Point> points = Arrays.asList(new Point(10, 10), new Point(14, 15));
         double distance = ValidationUtil.getDistance(new Line(points));
-        assertThat(distance).isEqualTo(6.403124);
+        assertThat(String.format("%6f", distance)).isEqualTo("6.403124");
     }
 }
