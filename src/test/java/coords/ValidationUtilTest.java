@@ -47,7 +47,7 @@ class ValidationUtilTest {
     @Test
     void 삼각형_넓이_구하기() {
         List<Point> points = ValidationUtil.getPoints("(10,10)-(14,15)-(20,8)");
-        double distance = ValidationUtil.getResult(new Rectangle(points));
-        assertThat(distance).isEqualTo(96);
+        double distance = ValidationUtil.getResult(new Triangle(points));
+        assertThat(String.format("%.1f", distance)).isEqualTo("29.0");
     }
 }
